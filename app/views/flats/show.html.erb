@@ -1,0 +1,24 @@
+<h1>detailed infos</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="card p-2">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="card p-2">
+        <h1>A bit more about this flat...</h1>
+        <p><%= @flat.description %></p>
+      </div>
+      <div class="card p-2">
+        <h1>Details</h1>
+        <div class="d-flex">
+          <p class="d-inline"><%= @flat.number_of_guests %></p>
+          <p class="d-inline">€ <%= @flat.price_per_night %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
